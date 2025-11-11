@@ -24,6 +24,7 @@ public  class Main{
             int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
             Node head = convert_arr2DLL(arr);
             print_DLL(head);
+            print_DLL(head);
     }
     private static Node convert_arr2DLL(int[] arr) {
         Node head = new Node(arr[0]);
