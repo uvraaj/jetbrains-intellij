@@ -1,6 +1,6 @@
 package com.yuvraj.DSA.Linked_lists.doubly;
 
-public  class Main{
+public  class array_to_doubly_linked_list {
     public static void main(String[] args) {
             int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
             Node head = convert_arr2DLL(arr);
