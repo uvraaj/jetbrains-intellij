@@ -40,14 +40,6 @@ public class length_Of_Loop {
         }
         return 0;
     }
-    public static void printLinkedList(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " <-> ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
     public static void main(String[] args) {
         Node head = new Node(1);
         Node second = new Node(2);
@@ -63,8 +55,6 @@ public class length_Of_Loop {
 
         // Creating a loop from fifth to second
         fifth.next = second;
-
-//        printLinkedList(head);
 
         System.out.println("length of loop inside a linked list is: " + length_of_loop_using_hashmap(head));
         System.out.println("length of loop inside a linked list is: " + length_of_loop_using_slow_and_fast_pointers(head));
