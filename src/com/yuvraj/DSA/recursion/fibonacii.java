@@ -3,8 +3,9 @@ import java.util.*;
 
 public class fibonacii {
     static int fibo(int n) {
-        if (n == 0) return 0;
-        if (n == 1) return 1;
+//        if (n == 0) return 0;
+//        if (n == 1) return 1;
+        if (n < 2) { return n; }
         if (n < 0) {
             System.out.println("Fibonacci does not exit for negative numbers");
         }
