@@ -3,8 +3,13 @@ package learning_DSA.recursion;
 public class binary_search_using_recursion {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,7,8,9};
-        int target = 9;
-        System.out.println("target value " + target + " is at index " + search(arr, target, 0, arr.length-1));
+        int target = 10;
+
+        if ((search(arr, target, 0, arr.length-1) == -1)) {
+            System.out.println("Number does not exit in the array");
+        } else {
+            System.out.println("target value " + target + " is at index " + search(arr, target, 0, arr.length-1));
+        }
     }
     static int search(int[] arr, int target, int start, int end) {
         if (start > end) { return -1; }
