@@ -6,7 +6,7 @@ public class remove_character {
         char character_to_remove = 'a';
         int starting_index = 0;
         System.out.println(remove_CHARACTER(str, character_to_remove, starting_index));
-//        System.out.println(remove_CHAR_ALT(str, character_to_remove));
+        System.out.println(remove_CHAR_ALT(str, character_to_remove));
     }
 
     private static String remove_CHARACTER(String str, char character_to_remove, int current_index) {
@@ -22,5 +22,17 @@ public class remove_character {
         if (current_character == character_to_remove) { return result_of_rest; }
         else { return current_character + result_of_rest; }
     }
-//    private static String remove_CHAR_ALT(String str, char character_to_remove){}
+    private static String remove_CHAR_ALT(String str, char character_to_remove){
+        //base case
+        if (str.isEmpty()) { return ""; }
+
+        char current_char = str.charAt(0);
+
+        if (current_char == character_to_remove) {
+            return remove_CHAR_ALT(str.substring(1), character_to_remove);
+        }
+        else {
+            return current_char + remove_CHAR_ALT(str.substring(1), character_to_remove);
+        }
+    }
 }
