@@ -2,7 +2,7 @@ package learning_DSA.recursion.kunal_kushwaha.Subset_Subsequence_String_Question
 
 public class generate_subsets {
     public static void main(String[] args) {
-        String sequence = "abc";
+        String sequence = "ab";
         String sub_sequence = "";
 
         // Start the recursion with an empty processed string (sub_sequence)
